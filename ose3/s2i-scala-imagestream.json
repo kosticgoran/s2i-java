@@ -1,0 +1,23 @@
+{
+   "kind": "ImageStream",
+   "apiVersion": "v1",
+   "metadata": {
+      "name": "s2i-scala"
+   },
+   "spec": {
+      "dockerImageRepository": "lunik/s2i-scala",
+      "tags": [
+         {
+            "name": "latest",
+            "annotations": {
+               "description": "Scala S2I image",
+               "iconClass": "icon-jboss",
+               "tags": "builder,scala,sbt,microservices,fatjar",
+               "supports": "java:8,sbt0.13.9",
+               "sampleRepo": "https://github.com/sadhal/play-scala.git",
+               "version": "1.0"
+            }
+         }
+      ]
+   }
+}
